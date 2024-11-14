@@ -1,20 +1,16 @@
-import { string } from "prop-types"
-
+import { string } from "prop-types";
 
 export const GifItem = ({ title, url }) => {
-
   return (
     <div className="card">
-        <img src={ url } alt={ title } />
-        <p>{ title }</p>
+      <img src={url} alt={title} />
+      <p>{title}</p>
     </div>
-  )
-}
+  );
+};
 
-GifItem.propTypes=
-{
-
+GifItem.propTypes = {
   title: string,
   url: string,
-  id: string
-}
+  id: string,
+};
